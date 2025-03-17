@@ -26,7 +26,6 @@ export async function getOrCreateUserKeyPair(
 		privateKey: String(bs58.encode(newKeypair.secretKey)),
 		inGame: true,
 	};
-	console.log(keypairData);
 	// STEP 2b-2: Save the new keypair to the user id
 
 	// STEP 3: Return the keypair data
