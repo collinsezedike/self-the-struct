@@ -4,7 +4,7 @@ import { HumanMessage } from "@langchain/core/messages";
 import { getOrCreateUserKeyPair, initializeAgent } from "./utils";
 
 export async function handleWelcomeResponse(ctx: Context) {
-	ctx.reply(
+	await ctx.reply(
 		`Hello there! Great to have you here today.
 
 I will be your financial tour guide and chat buddy. With your experience and my wit, we could make you unholy sums of money. I am here to talk finance so please keep our conversation around that context. In the course of our discuss, I will provide you with trade options where you can choose to buy, sell or ignore. You decisions affect your cash balance and your cash balance affects the longevity of our relationship.
